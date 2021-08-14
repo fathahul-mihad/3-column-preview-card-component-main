@@ -1,0 +1,40 @@
+@media(max-width:1440px){
+body{
+     height: 100vh;
+     background: hsl(0, 0%, 95%);
+     font-family:  'Big Shoulders Display';
+     color: hsl(0, 0%, 95%);
+}
+
+body .main-flex{
+     margin:70px 230px;
+     display: flex;
+     flex-direction: row;
+     height: 400px;
+     width: 900px;
+     margin-top: 40px;
+}
+.img,h1,p{
+     margin: 0 0;
+     padding: 30px 60px 0px 25px;
+}
+
+.sedans{
+     background:  hsl(31, 77%, 52%);
+}
+
+.suvs{
+     background:  hsl(184, 100%, 22%);
+}
+
+.luxury{
+     background:  hsl(179, 100%, 13%);
+}
+p{
+     font-family: 'Lexend Deca', sans-serif;;
+     font-size: 15px;
+     line-height: 1.7;
+     color: hsla(0, 0%, 100%, 0.75);
+     text-align: left;
+}
+}
