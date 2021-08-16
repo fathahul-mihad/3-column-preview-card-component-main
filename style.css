@@ -85,7 +85,7 @@ p{
  }
 }
 
- @media (max-width:900px){
+ @media (max-width:768px){
      body .main-flex{
           display: flex;
           flex-direction: column;
