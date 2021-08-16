@@ -1,4 +1,9 @@
 @media(max-width:1440px){
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
 body{
      max-height: 100vh;
      background: hsl(0, 0%, 95%);
@@ -14,21 +19,19 @@ body .main-flex{
      width: 900px;
      margin-top: 80px;
 }
-.img,h1,p{
-     margin: 0 0;
-     padding: 30px 46px 0px 47px;
-}
 
-.sedans{
-     background:  hsl(31, 77%, 52%);
-}
 
-.suvs{
+#sedans {
+     background-color: #e38826;
+     border-radius: 5px 5px 0 0;
+ }
+#suvs{
      background:  hsl(184, 100%, 22%);
 }
 
-.luxury{
+#luxury{
      background:  hsl(179, 100%, 13%);
+     border-radius: 0 0 5px 5px;
 }
 p{
      font-family: 'Lexend Deca', sans-serif;;
@@ -39,45 +42,78 @@ p{
      margin-bottom: 70px;
 }
 .main-flex a{
-     align-items: center;
-     text-align: center;
-     border: solid 2px hsla(0, 0%, 100%, 0.75) ;
-     color: hsla(0, 0%, 100%, 0.75);
+     font-family: "Lexend Deca", sans-serif;
+     background-color: #f2f2f2;
      text-decoration: none;
-     padding: 5px 25px;
-     margin: 0px 50px;
-     border-radius: 20px;
-     font-family: Lexend Deca;
+     margin-top: 2rem;
+     padding: 1rem 2rem;
+     text-align: center;
+     display: inline-block;
+     border-radius: 30px;
+     border: 2px solid transparent;
+     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border 0.25s ease-in-out;
 }
+#sedans a {
+     color: #e38826;
+ }
+ #sedans a:hover {
+     background-color: #e38826;
+     color: #f2f2f2;
+     border: 2px solid #f2f2f2;
+ }
+ #suvs a {
+     color: #006970;
+ }
+ #suvs a:hover {
+     background-color: #006970;
+     color: #f2f2f2;
+     border: 2px solid #f2f2f2;
+ }
+ #luxury a {
+     color: #004241;
+     
+ }
+ #luxury a:hover {
+     background-color: #004241;
+     color: #f2f2f2;
+     border: 2px solid #f2f2f2;
+ }
 }
 
  @media (max-width:900px){
      body .main-flex{
           display: flex;
           flex-direction: column;
-          max-width: 100%;
+          max-width: 343px;
           width: 300px;
-          height: 900px;
-          margin: 40px 40px;
+          height: 100%;
+          margin: 5rem auto 0rem auto;
           align-items: center;
      }
-     .img,h1,p{
-          margin: 0 15px;
-          padding: 15px;
+
+     .sedans{
+          border-radius: 5px 5px 0 0;
+     }
+     h1{
+          font-family: "Big Shoulders Display", cursive;
+          text-transform: uppercase;
+          font-size: 3rem;
+          margin: 1.5rem 0;
+          color: #f2f2f2;
      }
      p{
-          font-family: 'Lexend Deca', sans-serif;;
-          font-size: 15px;
-          line-height: 1.5;
-          color: hsla(0, 0%, 100%, 0.75);
-          text-align: left;
-          margin-bottom: 50px;
+          font-family: "Lexend Deca", sans-serif;
+          line-height: 1.7;
+          letter-spacing: 0.5px;
+          color: rgba(255, 255, 255, 0.75);
+          margin-bottom: 0;
+          
      }
-     .main-flex a {
-          padding: 5px 25px;
-          margin: 0px 40px;
+     .card{
+          padding: 3rem;
      }
-     .sedans,.suvs,.luxury{
-          padding-bottom: 10px;
+
+     .img{
+          margin-top: 20px;
      }
 }
